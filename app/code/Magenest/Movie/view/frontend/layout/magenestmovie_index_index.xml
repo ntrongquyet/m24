@@ -1,0 +1,8 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <referenceBlock name="wishlist_sidebar" remove="true" />
+            <block class="Magenest\Movie\Block\Movie" name="movie_tablemovie" template="Magenest_Movie::movie.phtml"/>
+        </referenceContainer>
+    </body>
+</page>

@@ -1,0 +1,231 @@
+[2021-03-19 03:08:39] main.ERROR: Error: Application is not installed yet.  [] []
+[2021-03-19 04:11:16] main.ERROR: The "--Movie" option does not exist.
+#0 /var/www/html/exam.local.com/vendor/symfony/console/Input/ArgvInput.php(143): Symfony\Component\Console\Input\ArgvInput->addLongOption()
+#1 /var/www/html/exam.local.com/vendor/symfony/console/Input/ArgvInput.php(79): Symfony\Component\Console\Input\ArgvInput->parseLongOption()
+#2 /var/www/html/exam.local.com/vendor/symfony/console/Input/Input.php(55): Symfony\Component\Console\Input\ArgvInput->parse()
+#3 /var/www/html/exam.local.com/vendor/symfony/console/Command/Command.php(214): Symfony\Component\Console\Input\Input->bind()
+#4 /var/www/html/exam.local.com/vendor/magento/framework/Interception/Interceptor.php(58): Symfony\Component\Console\Command\Command->run()
+#5 /var/www/html/exam.local.com/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Developer\Console\Command\TablesWhitelistGenerateCommand\Interceptor->___callParent()
+#6 /var/www/html/exam.local.com/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Developer\Console\Command\TablesWhitelistGenerateCommand\Interceptor->Magento\Framework\Interception\{closure}()
+#7 /var/www/html/exam.local.com/generated/code/Magento/Developer/Console/Command/TablesWhitelistGenerateCommand/Interceptor.php(77): Magento\Developer\Console\Command\TablesWhitelistGenerateCommand\Interceptor->___callPlugins()
+#8 /var/www/html/exam.local.com/vendor/symfony/console/Application.php(1009): Magento\Developer\Console\Command\TablesWhitelistGenerateCommand\Interceptor->run()
+#9 /var/www/html/exam.local.com/vendor/symfony/console/Application.php(273): Symfony\Component\Console\Application->doRunCommand()
+#10 /var/www/html/exam.local.com/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun()
+#11 /var/www/html/exam.local.com/vendor/symfony/console/Application.php(149): Magento\Framework\Console\Cli->doRun()
+#12 /var/www/html/exam.local.com/bin/magento(23): Symfony\Component\Console\Application->run()
+#13 {main} [] []
+[2021-03-19 05:39:22] main.ERROR: The "--Magenest_Movie" option does not exist.
+#0 /var/www/html/exam.local.com/vendor/symfony/console/Input/ArgvInput.php(143): Symfony\Component\Console\Input\ArgvInput->addLongOption()
+#1 /var/www/html/exam.local.com/vendor/symfony/console/Input/ArgvInput.php(79): Symfony\Component\Console\Input\ArgvInput->parseLongOption()
+#2 /var/www/html/exam.local.com/vendor/symfony/console/Input/Input.php(55): Symfony\Component\Console\Input\ArgvInput->parse()
+#3 /var/www/html/exam.local.com/vendor/symfony/console/Command/Command.php(214): Symfony\Component\Console\Input\Input->bind()
+#4 /var/www/html/exam.local.com/vendor/magento/framework/Interception/Interceptor.php(58): Symfony\Component\Console\Command\Command->run()
+#5 /var/www/html/exam.local.com/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Developer\Console\Command\TablesWhitelistGenerateCommand\Interceptor->___callParent()
+#6 /var/www/html/exam.local.com/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Developer\Console\Command\TablesWhitelistGenerateCommand\Interceptor->Magento\Framework\Interception\{closure}()
+#7 /var/www/html/exam.local.com/generated/code/Magento/Developer/Console/Command/TablesWhitelistGenerateCommand/Interceptor.php(77): Magento\Developer\Console\Command\TablesWhitelistGenerateCommand\Interceptor->___callPlugins()
+#8 /var/www/html/exam.local.com/vendor/symfony/console/Application.php(1009): Magento\Developer\Console\Command\TablesWhitelistGenerateCommand\Interceptor->run()
+#9 /var/www/html/exam.local.com/vendor/symfony/console/Application.php(273): Symfony\Component\Console\Application->doRunCommand()
+#10 /var/www/html/exam.local.com/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun()
+#11 /var/www/html/exam.local.com/vendor/symfony/console/Application.php(149): Magento\Framework\Console\Cli->doRun()
+#12 /var/www/html/exam.local.com/bin/magento(23): Symfony\Component\Console\Application->run()
+#13 {main} [] []
+[2021-03-19 05:40:57] main.ERROR: Too many arguments, expected arguments "command".
+#0 /var/www/html/exam.local.com/vendor/symfony/console/Input/ArgvInput.php(83): Symfony\Component\Console\Input\ArgvInput->parseArgument()
+#1 /var/www/html/exam.local.com/vendor/symfony/console/Input/Input.php(55): Symfony\Component\Console\Input\ArgvInput->parse()
+#2 /var/www/html/exam.local.com/vendor/symfony/console/Command/Command.php(214): Symfony\Component\Console\Input\Input->bind()
+#3 /var/www/html/exam.local.com/vendor/magento/framework/Interception/Interceptor.php(58): Symfony\Component\Console\Command\Command->run()
+#4 /var/www/html/exam.local.com/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Developer\Console\Command\TablesWhitelistGenerateCommand\Interceptor->___callParent()
+#5 /var/www/html/exam.local.com/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Developer\Console\Command\TablesWhitelistGenerateCommand\Interceptor->Magento\Framework\Interception\{closure}()
+#6 /var/www/html/exam.local.com/generated/code/Magento/Developer/Console/Command/TablesWhitelistGenerateCommand/Interceptor.php(77): Magento\Developer\Console\Command\TablesWhitelistGenerateCommand\Interceptor->___callPlugins()
+#7 /var/www/html/exam.local.com/vendor/symfony/console/Application.php(1009): Magento\Developer\Console\Command\TablesWhitelistGenerateCommand\Interceptor->run()
+#8 /var/www/html/exam.local.com/vendor/symfony/console/Application.php(273): Symfony\Component\Console\Application->doRunCommand()
+#9 /var/www/html/exam.local.com/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun()
+#10 /var/www/html/exam.local.com/vendor/symfony/console/Application.php(149): Magento\Framework\Console\Cli->doRun()
+#11 /var/www/html/exam.local.com/bin/magento(23): Symfony\Component\Console\Application->run()
+#12 {main} [] []
+[2021-03-19 05:41:26] main.ERROR: Too many arguments, expected arguments "command".
+#0 /var/www/html/exam.local.com/vendor/symfony/console/Input/ArgvInput.php(83): Symfony\Component\Console\Input\ArgvInput->parseArgument()
+#1 /var/www/html/exam.local.com/vendor/symfony/console/Input/Input.php(55): Symfony\Component\Console\Input\ArgvInput->parse()
+#2 /var/www/html/exam.local.com/vendor/symfony/console/Command/Command.php(214): Symfony\Component\Console\Input\Input->bind()
+#3 /var/www/html/exam.local.com/vendor/magento/framework/Interception/Interceptor.php(58): Symfony\Component\Console\Command\Command->run()
+#4 /var/www/html/exam.local.com/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Developer\Console\Command\TablesWhitelistGenerateCommand\Interceptor->___callParent()
+#5 /var/www/html/exam.local.com/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Developer\Console\Command\TablesWhitelistGenerateCommand\Interceptor->Magento\Framework\Interception\{closure}()
+#6 /var/www/html/exam.local.com/generated/code/Magento/Developer/Console/Command/TablesWhitelistGenerateCommand/Interceptor.php(77): Magento\Developer\Console\Command\TablesWhitelistGenerateCommand\Interceptor->___callPlugins()
+#7 /var/www/html/exam.local.com/vendor/symfony/console/Application.php(1009): Magento\Developer\Console\Command\TablesWhitelistGenerateCommand\Interceptor->run()
+#8 /var/www/html/exam.local.com/vendor/symfony/console/Application.php(273): Symfony\Component\Console\Application->doRunCommand()
+#9 /var/www/html/exam.local.com/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun()
+#10 /var/www/html/exam.local.com/vendor/symfony/console/Application.php(149): Magento\Framework\Console\Cli->doRun()
+#11 /var/www/html/exam.local.com/bin/magento(23): Symfony\Component\Console\Application->run()
+#12 {main} [] []
+[2021-03-19 07:18:44] main.CRITICAL: Impossible to process constructor argument Parameter #2 [ <required> Magenest\Movie\Model\MovieFactor $movieFactor ] of Magenest\Movie\Block\Movie class [] []
+[2021-03-19 07:18:44] main.CRITICAL: Invalid block type: \Magenest\Movie\Block\Movie [] []
+[2021-03-19 07:19:46] main.CRITICAL: Impossible to process constructor argument Parameter #2 [ <required> Magenest\Movie\Model\MovieFactor $movieFactor ] of Magenest\Movie\Block\Movie class [] []
+[2021-03-19 07:19:46] main.CRITICAL: Invalid block type: \Magenest\Movie\Block\Movie [] []
+[2021-03-19 07:22:39] main.CRITICAL: Impossible to process constructor argument Parameter #2 [ <required> Magenest\Movie\Model\MovieFactor $movieFactor ] of Magenest\Movie\Block\Movie class [] []
+[2021-03-19 07:22:39] main.CRITICAL: Invalid block type: \Magenest\Movie\Block\Movie [] []
+[2021-03-19 07:24:13] main.CRITICAL: Impossible to process constructor argument Parameter #2 [ <required> Magenest\Movie\Model\MovieFactor $movieFactor ] of Magenest\Movie\Block\Movie class [] []
+[2021-03-19 07:24:13] main.CRITICAL: Invalid block type: \Magenest\Movie\Block\Movie [] []
+[2021-03-19 07:26:22] main.CRITICAL: Impossible to process constructor argument Parameter #2 [ <required> Magenest\Movie\Model\MovieFactor $movieFactor ] of Magenest\Movie\Block\Movie class [] []
+[2021-03-19 07:26:22] main.CRITICAL: Invalid block type: \Magenest\Movie\Block\Movie [] []
+[2021-03-19 07:28:05] main.CRITICAL: Impossible to process constructor argument Parameter #2 [ <required> Magenest\Movie\Model\MovieFactor $movieFactor ] of Magenest\Movie\Block\Movie class [] []
+[2021-03-19 07:28:05] main.CRITICAL: Invalid block type: \Magenest\Movie\Block\Movie [] []
+[2021-03-19 08:54:53] main.CRITICAL: Error: Call to undefined method Magenest\Movie\Model\ResourceModel\Movie\MovieCollectionFactory::addFieldToSelect() in /var/www/html/exam.local.com/app/code/Magenest/Movie/Block/Movie.php:32
+Stack trace:
+#0 /var/www/html/exam.local.com/app/code/Magenest/Movie/view/frontend/templates/movie.phtml(8): Magenest\Movie\Block\Movie->getMovieItem()
+#1 /var/www/html/exam.local.com/vendor/magento/framework/View/TemplateEngine/Php.php(71): include('/var/www/html/e...')
+#2 /var/www/html/exam.local.com/vendor/magento/framework/View/Element/Template.php(273): Magento\Framework\View\TemplateEngine\Php->render()
+#3 /var/www/html/exam.local.com/vendor/magento/framework/View/Element/Template.php(303): Magento\Framework\View\Element\Template->fetchView()
+#4 /var/www/html/exam.local.com/vendor/magento/framework/View/Element/AbstractBlock.php(1111): Magento\Framework\View\Element\Template->_toHtml()
+#5 /var/www/html/exam.local.com/vendor/magento/framework/View/Element/AbstractBlock.php(1115): Magento\Framework\View\Element\AbstractBlock->Magento\Framework\View\Element\{closure}()
+#6 /var/www/html/exam.local.com/vendor/magento/framework/View/Element/AbstractBlock.php(675): Magento\Framework\View\Element\AbstractBlock->_loadCache()
+#7 /var/www/html/exam.local.com/vendor/magento/framework/View/Layout.php(578): Magento\Framework\View\Element\AbstractBlock->toHtml()
+#8 /var/www/html/exam.local.com/vendor/magento/framework/View/Layout.php(555): Magento\Framework\View\Layout->_renderBlock()
+#9 /var/www/html/exam.local.com/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#10 /var/www/html/exam.local.com/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#11 /var/www/html/exam.local.com/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#12 /var/www/html/exam.local.com/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#13 /var/www/html/exam.local.com/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#14 /var/www/html/exam.local.com/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#15 /var/www/html/exam.local.com/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#16 /var/www/html/exam.local.com/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#17 /var/www/html/exam.local.com/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#18 /var/www/html/exam.local.com/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#19 /var/www/html/exam.local.com/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#20 /var/www/html/exam.local.com/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#21 /var/www/html/exam.local.com/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#22 /var/www/html/exam.local.com/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#23 /var/www/html/exam.local.com/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#24 /var/www/html/exam.local.com/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#25 /var/www/html/exam.local.com/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#26 /var/www/html/exam.local.com/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#27 /var/www/html/exam.local.com/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#28 /var/www/html/exam.local.com/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#29 /var/www/html/exam.local.com/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#30 /var/www/html/exam.local.com/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#31 /var/www/html/exam.local.com/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#32 /var/www/html/exam.local.com/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#33 /var/www/html/exam.local.com/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#34 /var/www/html/exam.local.com/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#35 /var/www/html/exam.local.com/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#36 /var/www/html/exam.local.com/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#37 /var/www/html/exam.local.com/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#38 /var/www/html/exam.local.com/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#39 /var/www/html/exam.local.com/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#40 /var/www/html/exam.local.com/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#41 /var/www/html/exam.local.com/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#42 /var/www/html/exam.local.com/vendor/magento/framework/View/Layout.php(975): Magento\Framework\View\Layout\Interceptor->renderElement()
+#43 /var/www/html/exam.local.com/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Layout->getOutput()
+#44 /var/www/html/exam.local.com/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Layout\Interceptor->___callParent()
+#45 /var/www/html/exam.local.com/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\View\Layout\Interceptor->Magento\Framework\Interception\{closure}()
+#46 /var/www/html/exam.local.com/generated/code/Magento/Framework/View/Layout/Interceptor.php(347): Magento\Framework\View\Layout\Interceptor->___callPlugins()
+#47 /var/www/html/exam.local.com/vendor/magento/framework/View/Result/Page.php(258): Magento\Framework\View\Layout\Interceptor->getOutput()
+#48 /var/www/html/exam.local.com/vendor/magento/framework/View/Result/Layout.php(171): Magento\Framework\View\Result\Page->render()
+#49 /var/www/html/exam.local.com/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Result\Layout->renderResult()
+#50 /var/www/html/exam.local.com/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Result\Page\Interceptor->___callParent()
+#51 /var/www/html/exam.local.com/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\View\Result\Page\Interceptor->Magento\Framework\Interception\{closure}()
+#52 /var/www/html/exam.local.com/generated/code/Magento/Framework/View/Result/Page/Interceptor.php(95): Magento\Framework\View\Result\Page\Interceptor->___callPlugins()
+#53 /var/www/html/exam.local.com/vendor/magento/framework/App/Http.php(120): Magento\Framework\View\Result\Page\Interceptor->renderResult()
+#54 /var/www/html/exam.local.com/generated/code/Magento/Framework/App/Http/Interceptor.php(23): Magento\Framework\App\Http->launch()
+#55 /var/www/html/exam.local.com/vendor/magento/framework/App/Bootstrap.php(263): Magento\Framework\App\Http\Interceptor->launch()
+#56 /var/www/html/exam.local.com/pub/index.php(29): Magento\Framework\App\Bootstrap->run()
+#57 {main} [] []
+[2021-03-19 08:56:56] main.INFO: Broken reference: the 'yotpo_bottomline' element cannot be added as child to 'product.info.main', because the latter doesn't exist [] []
+[2021-03-19 08:56:56] main.INFO: Broken reference: the 'yotpo_bottomline' tries to reorder itself towards 'product.info.addto', but their parents are different: 'product.info.main' and '' respectively. [] []
+[2021-03-19 09:04:35] main.INFO: Broken reference: the 'yotpo_bottomline' element cannot be added as child to 'product.info.main', because the latter doesn't exist [] []
+[2021-03-19 09:04:35] main.INFO: Broken reference: the 'yotpo_bottomline' tries to reorder itself towards 'product.info.addto', but their parents are different: 'product.info.main' and '' respectively. [] []
+[2021-03-19 09:06:39] main.INFO: Broken reference: the 'yotpo_bottomline' element cannot be added as child to 'product.info.main', because the latter doesn't exist [] []
+[2021-03-19 09:06:39] main.INFO: Broken reference: the 'yotpo_bottomline' tries to reorder itself towards 'product.info.addto', but their parents are different: 'product.info.main' and '' respectively. [] []
+[2021-03-19 09:12:20] main.INFO: Broken reference: the 'yotpo_bottomline' element cannot be added as child to 'product.info.main', because the latter doesn't exist [] []
+[2021-03-19 09:12:20] main.INFO: Broken reference: the 'yotpo_bottomline' tries to reorder itself towards 'product.info.addto', but their parents are different: 'product.info.main' and '' respectively. [] []
+[2021-03-19 09:16:16] main.INFO: Broken reference: the 'yotpo_bottomline' element cannot be added as child to 'product.info.main', because the latter doesn't exist [] []
+[2021-03-19 09:16:16] main.INFO: Broken reference: the 'yotpo_bottomline' tries to reorder itself towards 'product.info.addto', but their parents are different: 'product.info.main' and '' respectively. [] []
+[2021-03-19 09:23:18] main.ERROR: Item (Magenest\Movie\Model\Movie) with the same ID "1" already exists. [] []
+[2021-03-19 09:25:23] main.INFO: Broken reference: the 'yotpo_bottomline' element cannot be added as child to 'product.info.main', because the latter doesn't exist [] []
+[2021-03-19 09:25:23] main.INFO: Broken reference: the 'yotpo_bottomline' tries to reorder itself towards 'product.info.addto', but their parents are different: 'product.info.main' and '' respectively. [] []
+[2021-03-19 09:25:29] main.ERROR: Item (Magenest\Movie\Model\Movie) with the same ID "1" already exists. [] []
+[2021-03-19 09:28:29] main.INFO: Broken reference: the 'yotpo_bottomline' element cannot be added as child to 'product.info.main', because the latter doesn't exist [] []
+[2021-03-19 09:28:29] main.INFO: Broken reference: the 'yotpo_bottomline' tries to reorder itself towards 'product.info.addto', but their parents are different: 'product.info.main' and '' respectively. [] []
+[2021-03-19 09:28:29] main.ERROR: Item (Magenest\Movie\Model\Movie) with the same ID "1" already exists. [] []
+[2021-03-19 09:28:37] main.INFO: Broken reference: the 'yotpo_bottomline' element cannot be added as child to 'product.info.main', because the latter doesn't exist [] []
+[2021-03-19 09:28:37] main.INFO: Broken reference: the 'yotpo_bottomline' tries to reorder itself towards 'product.info.addto', but their parents are different: 'product.info.main' and '' respectively. [] []
+[2021-03-19 09:31:09] main.ERROR: Item (Magenest\Movie\Model\Movie) with the same ID "1" already exists. [] []
+[2021-03-19 10:16:54] main.INFO: Broken reference: the 'yotpo_bottomline' element cannot be added as child to 'product.info.main', because the latter doesn't exist [] []
+[2021-03-19 10:16:54] main.INFO: Broken reference: the 'yotpo_bottomline' tries to reorder itself towards 'product.info.addto', but their parents are different: 'product.info.main' and '' respectively. [] []
+[2021-03-19 10:20:44] main.INFO: Broken reference: the 'yotpo_bottomline' element cannot be added as child to 'product.info.main', because the latter doesn't exist [] []
+[2021-03-19 10:20:44] main.INFO: Broken reference: the 'yotpo_bottomline' tries to reorder itself towards 'product.info.addto', but their parents are different: 'product.info.main' and '' respectively. [] []
+[2021-03-20 06:57:40] main.INFO: Broken reference: the 'yotpo_bottomline' element cannot be added as child to 'product.info.main', because the latter doesn't exist [] []
+[2021-03-20 06:57:40] main.INFO: Broken reference: the 'yotpo_bottomline' tries to reorder itself towards 'product.info.addto', but their parents are different: 'product.info.main' and '' respectively. [] []
+[2021-03-20 06:57:40] main.ERROR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'exam.mageneset_movie_actor' doesn't exist, query was: SELECT `main_table`.*, `md`.`name` AS `director_name`, `mma`.`actor_id` AS `actor_movie_id`, GROUP_CONCAT(ma.actor_name) AS `actor_name` FROM `magenest_movie` AS `main_table`
+ LEFT JOIN `magenest_director` AS `md` ON main_table.director_id = md.director_id
+ INNER JOIN `mageneset_movie_actor` AS `mma` ON main_table.movie_id = mma.movie_id
+ INNER JOIN `magenest_actor` AS `ma` ON main_table.actor_movie_id = ma.actor_id GROUP BY `main_table`.`movie_id` [] []
+[2021-03-20 06:57:41] main.INFO: Broken reference: the 'yotpo_bottomline' element cannot be added as child to 'product.info.main', because the latter doesn't exist [] []
+[2021-03-20 06:57:41] main.INFO: Broken reference: the 'yotpo_bottomline' tries to reorder itself towards 'product.info.addto', but their parents are different: 'product.info.main' and '' respectively. [] []
+[2021-03-20 06:59:24] main.INFO: Broken reference: the 'yotpo_bottomline' element cannot be added as child to 'product.info.main', because the latter doesn't exist [] []
+[2021-03-20 06:59:24] main.INFO: Broken reference: the 'yotpo_bottomline' tries to reorder itself towards 'product.info.addto', but their parents are different: 'product.info.main' and '' respectively. [] []
+[2021-03-20 07:05:20] main.ERROR: Warning: Invalid argument supplied for foreach() in /var/www/html/exam.local.com/app/code/Magenest/Movie/view/frontend/templates/movie.phtml on line 8 [] []
+[2021-03-20 07:06:05] main.INFO: Broken reference: the 'yotpo_bottomline' element cannot be added as child to 'product.info.main', because the latter doesn't exist [] []
+[2021-03-20 07:06:05] main.INFO: Broken reference: the 'yotpo_bottomline' tries to reorder itself towards 'product.info.addto', but their parents are different: 'product.info.main' and '' respectively. [] []
+[2021-03-20 07:07:34] main.ERROR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ma.actor_name' in 'field list', query was: SELECT `main_table`.*, `md`.`name` AS `director_name`, `mma`.`actor_id` AS `actor_movie_id`, GROUP_CONCAT(ma.actor_name) AS `actor_name` FROM `magenest_movie` AS `main_table`
+ LEFT JOIN `magenest_director` AS `md` ON main_table.director_id = md.director_id
+ INNER JOIN `magenest_movie_actor` AS `mma` ON main_table.movie_id = mma.movie_id
+ INNER JOIN `magenest_actor` AS `ma` ON main_table.actor_movie_id = ma.actor_id GROUP BY `main_table`.`movie_id` [] []
+[2021-03-20 07:12:29] main.INFO: Broken reference: the 'yotpo_bottomline' element cannot be added as child to 'product.info.main', because the latter doesn't exist [] []
+[2021-03-20 07:12:29] main.INFO: Broken reference: the 'yotpo_bottomline' tries to reorder itself towards 'product.info.addto', but their parents are different: 'product.info.main' and '' respectively. [] []
+[2021-03-20 07:22:07] main.INFO: Broken reference: the 'yotpo_bottomline' element cannot be added as child to 'product.info.main', because the latter doesn't exist [] []
+[2021-03-20 07:22:07] main.INFO: Broken reference: the 'yotpo_bottomline' tries to reorder itself towards 'product.info.addto', but their parents are different: 'product.info.main' and '' respectively. [] []
+[2021-03-20 07:25:58] main.ERROR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'main_table.actor_movie_id' in 'on clause', query was: SELECT `main_table`.*, `md`.`name` AS `director_name`, `mma`.`actor_id` AS `actor_movie_id`, GROUP_CONCAT(ma.name) AS `actors_name` FROM `magenest_movie` AS `main_table`
+ LEFT JOIN `magenest_director` AS `md` ON main_table.director_id = md.director_id
+ INNER JOIN `magenest_movie_actor` AS `mma` ON main_table.movie_id = mma.movie_id
+ INNER JOIN `magenest_actor` AS `ma` ON main_table.actor_movie_id = ma.actor_id GROUP BY `main_table`.`movie_id,main_table`.`name` [] []
+[2021-03-20 07:26:02] main.INFO: Broken reference: the 'yotpo_bottomline' element cannot be added as child to 'product.info.main', because the latter doesn't exist [] []
+[2021-03-20 07:26:02] main.INFO: Broken reference: the 'yotpo_bottomline' tries to reorder itself towards 'product.info.addto', but their parents are different: 'product.info.main' and '' respectively. [] []
+[2021-03-20 07:27:54] main.INFO: Broken reference: the 'yotpo_bottomline' element cannot be added as child to 'product.info.main', because the latter doesn't exist [] []
+[2021-03-20 07:27:54] main.INFO: Broken reference: the 'yotpo_bottomline' tries to reorder itself towards 'product.info.addto', but their parents are different: 'product.info.main' and '' respectively. [] []
+[2021-03-20 07:30:03] main.ERROR: The following requested cache types are not supported: 'layouts'.
+Supported types: config, layout, block_html, collections, reflection, db_ddl, compiled_config, eav, customer_notification, config_integration, config_integration_api, full_page, config_webservice, translate, vertex
+#0 /var/www/html/exam.local.com/vendor/magento/module-backend/Console/Command/AbstractCacheTypeManageCommand.php(61): Magento\Backend\Console\Command\AbstractCacheManageCommand->getRequestedTypes()
+#1 /var/www/html/exam.local.com/vendor/symfony/console/Command/Command.php(255): Magento\Backend\Console\Command\AbstractCacheTypeManageCommand->execute()
+#2 /var/www/html/exam.local.com/vendor/magento/framework/Interception/Interceptor.php(58): Symfony\Component\Console\Command\Command->run()
+#3 /var/www/html/exam.local.com/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Backend\Console\Command\CacheCleanCommand\Interceptor->___callParent()
+#4 /var/www/html/exam.local.com/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Backend\Console\Command\CacheCleanCommand\Interceptor->Magento\Framework\Interception\{closure}()
+#5 /var/www/html/exam.local.com/generated/code/Magento/Backend/Console/Command/CacheCleanCommand/Interceptor.php(77): Magento\Backend\Console\Command\CacheCleanCommand\Interceptor->___callPlugins()
+#6 /var/www/html/exam.local.com/vendor/symfony/console/Application.php(1009): Magento\Backend\Console\Command\CacheCleanCommand\Interceptor->run()
+#7 /var/www/html/exam.local.com/vendor/symfony/console/Application.php(273): Symfony\Component\Console\Application->doRunCommand()
+#8 /var/www/html/exam.local.com/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun()
+#9 /var/www/html/exam.local.com/vendor/symfony/console/Application.php(149): Magento\Framework\Console\Cli->doRun()
+#10 /var/www/html/exam.local.com/bin/magento(23): Symfony\Component\Console\Application->run()
+#11 {main} [] []
+[2021-03-20 07:30:12] main.INFO: Broken reference: the 'yotpo_bottomline' element cannot be added as child to 'product.info.main', because the latter doesn't exist [] []
+[2021-03-20 07:30:12] main.INFO: Broken reference: the 'yotpo_bottomline' tries to reorder itself towards 'product.info.addto', but their parents are different: 'product.info.main' and '' respectively. [] []
+[2021-03-20 07:32:34] main.INFO: Broken reference: the 'yotpo_bottomline' element cannot be added as child to 'product.info.main', because the latter doesn't exist [] []
+[2021-03-20 07:32:34] main.INFO: Broken reference: the 'yotpo_bottomline' tries to reorder itself towards 'product.info.addto', but their parents are different: 'product.info.main' and '' respectively. [] []
+[2021-03-20 07:33:04] main.INFO: Broken reference: the 'yotpo_bottomline' element cannot be added as child to 'product.info.main', because the latter doesn't exist [] []
+[2021-03-20 07:33:04] main.INFO: Broken reference: the 'yotpo_bottomline' tries to reorder itself towards 'product.info.addto', but their parents are different: 'product.info.main' and '' respectively. [] []
+[2021-03-20 07:33:24] main.INFO: Broken reference: the 'yotpo_bottomline' element cannot be added as child to 'product.info.main', because the latter doesn't exist [] []
+[2021-03-20 07:33:24] main.INFO: Broken reference: the 'yotpo_bottomline' tries to reorder itself towards 'product.info.addto', but their parents are different: 'product.info.main' and '' respectively. [] []
+[2021-03-20 07:34:52] main.INFO: Broken reference: the 'yotpo_bottomline' element cannot be added as child to 'product.info.main', because the latter doesn't exist [] []
+[2021-03-20 07:34:52] main.INFO: Broken reference: the 'yotpo_bottomline' tries to reorder itself towards 'product.info.addto', but their parents are different: 'product.info.main' and '' respectively. [] []
+[2021-03-20 07:36:01] main.INFO: Broken reference: the 'yotpo_bottomline' element cannot be added as child to 'product.info.main', because the latter doesn't exist [] []
+[2021-03-20 07:36:01] main.INFO: Broken reference: the 'yotpo_bottomline' tries to reorder itself towards 'product.info.addto', but their parents are different: 'product.info.main' and '' respectively. [] []
+[2021-03-20 07:37:29] main.INFO: Broken reference: the 'yotpo_bottomline' element cannot be added as child to 'product.info.main', because the latter doesn't exist [] []
+[2021-03-20 07:37:29] main.INFO: Broken reference: the 'yotpo_bottomline' tries to reorder itself towards 'product.info.addto', but their parents are different: 'product.info.main' and '' respectively. [] []
+[2021-03-20 07:38:54] main.INFO: Broken reference: the 'yotpo_bottomline' element cannot be added as child to 'product.info.main', because the latter doesn't exist [] []
+[2021-03-20 07:38:54] main.INFO: Broken reference: the 'yotpo_bottomline' tries to reorder itself towards 'product.info.addto', but their parents are different: 'product.info.main' and '' respectively. [] []
+[2021-03-20 07:38:55] main.ERROR: Warning: explode() expects at least 2 parameters, 1 given in /var/www/html/exam.local.com/app/code/Magenest/Movie/view/frontend/templates/movie.phtml on line 22 [] []
+[2021-03-20 07:40:11] main.INFO: Broken reference: the 'yotpo_bottomline' element cannot be added as child to 'product.info.main', because the latter doesn't exist [] []
+[2021-03-20 07:40:11] main.INFO: Broken reference: the 'yotpo_bottomline' tries to reorder itself towards 'product.info.addto', but their parents are different: 'product.info.main' and '' respectively. [] []
+[2021-03-20 07:40:12] main.ERROR: Notice: Array to string conversion in /var/www/html/exam.local.com/app/code/Magenest/Movie/view/frontend/templates/movie.phtml on line 22 [] []
+[2021-03-20 07:44:16] main.INFO: Broken reference: the 'yotpo_bottomline' element cannot be added as child to 'product.info.main', because the latter doesn't exist [] []
+[2021-03-20 07:44:16] main.INFO: Broken reference: the 'yotpo_bottomline' tries to reorder itself towards 'product.info.addto', but their parents are different: 'product.info.main' and '' respectively. [] []
+[2021-03-20 07:45:23] main.INFO: Broken reference: the 'yotpo_bottomline' element cannot be added as child to 'product.info.main', because the latter doesn't exist [] []
+[2021-03-20 07:45:23] main.INFO: Broken reference: the 'yotpo_bottomline' tries to reorder itself towards 'product.info.addto', but their parents are different: 'product.info.main' and '' respectively. [] []
+[2021-03-20 07:47:44] main.INFO: Broken reference: the 'yotpo_bottomline' element cannot be added as child to 'product.info.main', because the latter doesn't exist [] []
+[2021-03-20 07:47:44] main.INFO: Broken reference: the 'yotpo_bottomline' tries to reorder itself towards 'product.info.addto', but their parents are different: 'product.info.main' and '' respectively. [] []
+[2021-03-20 07:47:46] main.ERROR: Notice: Undefined variable: actors_name in /var/www/html/exam.local.com/app/code/Magenest/Movie/view/frontend/templates/movie.phtml on line 27 [] []
+[2021-03-20 07:48:06] main.INFO: Broken reference: the 'yotpo_bottomline' element cannot be added as child to 'product.info.main', because the latter doesn't exist [] []
+[2021-03-20 07:48:06] main.INFO: Broken reference: the 'yotpo_bottomline' tries to reorder itself towards 'product.info.addto', but their parents are different: 'product.info.main' and '' respectively. [] []
+[2021-03-20 07:49:26] main.INFO: Broken reference: the 'yotpo_bottomline' element cannot be added as child to 'product.info.main', because the latter doesn't exist [] []
+[2021-03-20 07:49:26] main.INFO: Broken reference: the 'yotpo_bottomline' tries to reorder itself towards 'product.info.addto', but their parents are different: 'product.info.main' and '' respectively. [] []
+[2021-03-20 07:50:24] main.INFO: Broken reference: the 'yotpo_bottomline' element cannot be added as child to 'product.info.main', because the latter doesn't exist [] []
+[2021-03-20 07:50:24] main.INFO: Broken reference: the 'yotpo_bottomline' tries to reorder itself towards 'product.info.addto', but their parents are different: 'product.info.main' and '' respectively. [] []

@@ -1,0 +1,41 @@
+<?php
+/** @var Magenest\Movie\Block\Movie $block */
+?>
+<h1>Chương 4 - 5</h1>
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Tên phim</th>
+        <th scope="col">Đạo diễn</th>
+        <th scope="col">Danh sách diễn viên</th>
+    </tr>
+    </thead>
+    <tbody>
+    <?php
+    foreach ($block->getMovieItem() as $key => $product): ?>
+
+        <tr>
+            <th scope="row"><?= $key ?></th>
+            <td><?= $product->getData('name') ?></td>
+            <td><?= $product->getData('director_name') ?></td>
+            <td>
+                <?php
+                $actors_name = explode(',', $product->getData('actors_name'));
+                ?>
+                <ul>
+                    <?php foreach ($actors_name as $actor): ?>
+                        <li>
+                            <?= $actor; ?>
+                        </li>
+                    <?php endforeach; ?>
+
+                </ul>
+            </td>
+        </tr>
+
+    <?php endforeach; ?>
+
+    </tbody>
+</table>
+

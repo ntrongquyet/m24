@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+
+        <tab id="mgn_movie" translate="label" sortOrder="300">
+            <label>Magenest</label>
+        </tab>
+        <section id="mgn_movie_section" translate="label" type="text" sortOrder="140" showInDefault="1"
+                 showInWebsite="1" showInStore="1">
+            <label>Movie</label>
+            <tab>mgn_movie</tab>
+            <resource>Magenest_Movie::config_movie</resource>
+            <group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInStore="1">
+                <label>General Options</label>
+                <field id="text_field" translate="label" canRestore="1" type="text" sortOrder="1" showInDefault="1"
+                       showInWebsite="1"
+                       showInStore="1">
+                    <label>Text Field</label>
+                </field>
+                <field id="yes_no_field_abcd" canRestore="1" translate="label" type="select" sortOrder="1"
+                       showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Yes/No_Field_abcd</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+
+
+                <field id="custom_select_field" translate="label" type="select" sortOrder="1" showInDefault="1"
+                       showInWebsite="1"
+                       showInStore="1">
+                    <label>Custom Select Field</label>
+                    <source_model>Magenest\Movie\Model\Config\Source\CustomSelect</source_model>
+                </field>
+
+
+                <field id="magenest_movie_counts" translate="label" type="text" sortOrder="1" showInDefault="1"
+                       showInWebsite="1"
+                       showInStore="1">
+                    <frontend_model>Magenest\Movie\Block\RowsOfTableMagenestMovie</frontend_model>
+                    <label>Rows in table “magenest_movie”</label>
+                </field>
+
+                <field id="magenest_actor_counts" translate="label" type="text" sortOrder="1" showInDefault="1"
+                       showInWebsite="1"
+                       showInStore="1">
+
+                    <frontend_model>Magenest\Movie\Block\RowsOfTableMagenestActor</frontend_model>
+                    <depends>
+                        <field id="custom_select_field">1</field>
+                    </depends>
+                    <label>Rows in table “magenest_actor”</label>
+                </field>
+
+                <field id="button_field" translate="label" type="button" sortOrder="1" showInDefault="1"
+                       showInWebsite="1"
+                       showInStore="1">
+                    <frontend_model>Magenest\Movie\Block\Button</frontend_model>
+                    <label>Button Field</label>
+                </field>
+            </group>
+        </section>
+
+    </system>
+</config>
+

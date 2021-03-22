@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <argument name="data" xsi:type="array">
+        <item name="js_config" xsi:type="array">
+            <item name="provider" xsi:type="string">magenesetadmin_movie_listing.magenesetadmin_movie_listing_data_source</item>
+        </item>
+    </argument>
+    <settings>
+        <spinner>magenest_movie</spinner>
+        <deps>
+            <dep>magenesetadmin_movie_listing.magenesetadmin_movie_listing_data_source</dep>
+        </deps>
+    </settings>
+    <dataSource name="magenesetadmin_movie_listing_data_source" component="Magento_Ui/js/grid/provider">
+        <settings>
+            <updateUrl path="mui/index/render"/>
+            <storageConfig>
+                <param name="indexField" xsi:type="string">movie_id</param>
+            </storageConfig>
+        </settings>
+        <aclResource>Magenest_Movie::config_movie</aclResource>
+        <dataProvider class="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider" name="magenesetadmin_movie_listing_data_source">
+            <settings>
+                <requestFieldName>movie_id</requestFieldName>
+                <primaryFieldName>movie_id</primaryFieldName>
+            </settings>
+        </dataProvider>
+    </dataSource>
+    <listingToolbar name="listing_top">
+        <settings>
+            <sticky>true</sticky>
+        </settings>
+        <bookmark name="bookmarks"/>
+        <columnsControls name="columns_controls"/>
+        <exportButton name="export_button"/>
+        <filters name="listing_filters" class="Magenest\Report\Ui\Component\Filters">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="templates" xsi:type="array">
+                        <item name="filters" xsi:type="array">
+                            <item name="select" xsi:type="array">
+                                <item name="component" xsi:type="string">Magento_Ui/js/form/element/ui-select</item>
+                                <item name="template" xsi:type="string">ui/grid/filters/elements/ui-select</item>
+                            </item>
+                        </item>
+                    </item>
+                </item>
+            </argument>
+        </filters>
+        <paging name="listing_paging"/>
+    </listingToolbar>
+    <columns name="magenest_movie">
+        <selectionsColumn name="ids">
+            <settings>
+                <indexField>movie_id</indexField>
+            </settings>
+        </selectionsColumn>
+        <column name="movie_id" sortOrder="20">
+            <settings>
+                <filter>text</filter>
+                <label translate="true">#</label>
+            </settings>
+        </column>
+        <column name="name" sortOrder="30">
+            <settings>
+                <label translate="true">Name</label>
+                <filter>text</filter>
+            </settings>
+        </column>
+        <column name="description" sortOrder="40">
+            <settings>
+                <filter>text</filter>
+                <label translate="true">Description</label>
+            </settings>
+        </column>
+        <column name="rating" sortOrder="50">
+            <settings>
+                <filter>number</filter>
+                <label translate="true">Rating</label>
+            </settings>
+        </column>
+        <column name="director_id" sortOrder="60">
+            <settings>
+                <filter>number</filter>
+                <label translate="true">Director_id</label>
+            </settings>
+        </column>
+        <column name="action" sortOrder="65">
+            <settings>
+                <filter>text</filter>
+                <label translate="true">Action</label>
+            </settings>
+        </column>
+    </columns>
+</listing>

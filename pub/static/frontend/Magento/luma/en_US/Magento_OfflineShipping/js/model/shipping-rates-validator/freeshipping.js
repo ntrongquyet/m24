@@ -1,0 +1,1 @@
+/var/www/html/exam.local.com/vendor/magento/module-offline-shipping/view/frontend/web/js/model/shipping-rates-validator/freeshipping.js

@@ -3,4 +3,10 @@
     <event name="adminhtml_customer_save_after">
         <observer name="magenest_movie_event_changenamecustomer" instance="Magenest\Movie\Observer\ChangeFirstNameCustomer" />
     </event>
+    <event name="magenest_movie_save_after_movie">
+        <observer name="magenest_movie_event_aftersavemovie" instance="Magenest\Movie\Observer\DefineRatingMovie" />
+    </event>
+    <event name="admin_system_config_changed_section_mgn_movie_section">
+        <observer name="magenest_movie_event_savepingtopongstoreconfig" instance="Magenest\Movie\Observer\SavePingToPong" />
+    </event>
 </config>

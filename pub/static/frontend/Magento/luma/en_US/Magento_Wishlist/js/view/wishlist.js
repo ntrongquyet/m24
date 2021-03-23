@@ -1,0 +1,1 @@
+/var/www/html/exam.local.com/vendor/magento/module-wishlist/view/frontend/web/js/view/wishlist.js

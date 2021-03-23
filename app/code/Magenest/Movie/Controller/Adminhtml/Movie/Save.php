@@ -39,6 +39,7 @@ class Save extends \Magento\Backend\App\Action
             try {
                 $movie->addData($newData);
                 $this->movieResoureModel->save($movie);
+                $this->_eventManager->dispatch('magenest_movie_save_after_movie', ["movie" => $movie]);
                 $this->getMessageManager()->addSuccessMessage(__('Save is successfully !!!'));
                 return $this->_redirect('magenest_admin/movie/index');
             } catch (\Exception $e) {

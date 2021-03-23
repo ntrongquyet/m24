@@ -20,6 +20,9 @@ class AddNewMovie extends Action
 
     public function execute()
     {
-        return $this->_pageResultFactory->create();
+        $resultPage = $this->_pageResultFactory->create();
+        $resultPage->getConfig()->getTitle()->prepend(__('Add New Movie'));
+        return $resultPage;
+
     }
 }

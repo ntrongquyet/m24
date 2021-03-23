@@ -6,8 +6,8 @@
         <add id="Magenest_Movie::movie_grid" title="Movie Grid" module="Magenest_Movie" sortOrder="10"
              resource="Magenest_Movie::config_movie" parent="Magenest_Movie::movie" action="magenest_admin/movie/index"/>
         <add id="Magenest_Movie::director_grid" title="Director Grid" module="Magenest_Movie" sortOrder="10"
-             resource="Magenest_Movie::config_movie" parent="Magenest_Movie::movie" action="example/post/index"/>
+             resource="Magenest_Movie::config_movie" parent="Magenest_Movie::movie" action="magenest_admin/director/index"/>
         <add id="Magenest_Movie::actor_grid" title="Actor Grid" module="Magenest_Movie" sortOrder="10"
-             resource="Magenest_Movie::config_movie" parent="Magenest_Movie::movie" action="example/post/index"/>
+             resource="Magenest_Movie::config_movie" parent="Magenest_Movie::movie" action="magenest_admin/actor/index"/>
     </menu>
 </config>

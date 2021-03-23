@@ -8,7 +8,7 @@
 <schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
     <table name="magenest_director" resource="default" engine="innodb" comment="Table Magenest Movie">
-        <column xsi:type="int" name="director_id" padding="10" unsigned="true" nullable="false" identity="true"
+        <column xsi:type="int" name="director_id" padding="6" unsigned="true" nullable="false" identity="true"
                 comment="Director ID"/>
         <column xsi:type="varchar" name="name" length="200" nullable="true" comment="Director Name"/>
         <constraint xsi:type="primary" referenceId="PRIMARY">
@@ -29,13 +29,14 @@
         <column xsi:type="varchar" name="name" length="200" nullable="true" comment="Movie Name"/>
         <column xsi:type="varchar" name="description" nullable="true" length="500" comment="Movie Description"/>
         <column xsi:type="int" name="rating" nullable="true" padding="6" comment="Movie Rating"/>
-        <column xsi:type="int" name="director_id" nullable="false" padding="6" comment="Movie Director"/>
+        <column xsi:type="int" name="director_id" padding="6" unsigned="true" nullable="false"
+                comment="Director ID"/>
         <constraint xsi:type="primary" referenceId="PRIMARY">
             <column name="movie_id"/>
         </constraint>
         <constraint xsi:type="foreign" referenceId="MOVIE_DIRECTOR"
                     table="magenest_movie"
-                    column="movie_id"
+                    column="director_id"
                     referenceTable="magenest_director"
                     referenceColumn="director_id"/>
     </table>

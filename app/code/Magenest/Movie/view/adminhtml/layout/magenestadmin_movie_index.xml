@@ -6,7 +6,7 @@
     </head>
     <body>
         <referenceContainer name="content">
-            <uiComponent name="magenesetadmin_movie_listing"/>
+            <uiComponent name="magenestadmin_movie_listing"/>
         </referenceContainer>
     </body>
 </page>

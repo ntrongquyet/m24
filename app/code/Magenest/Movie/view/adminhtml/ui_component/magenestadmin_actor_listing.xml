@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <argument name="data" xsi:type="array">
+        <item name="js_config" xsi:type="array">
+            <item name="provider" xsi:type="string">
+                magenestadmin_actor_listing.magenestadmin_actor_listing_data_source
+            </item>
+        </item>
+    </argument>
+    <settings>
+        <buttons>
+            <button name="add">
+                <url path="*/*/addnewactor"/>
+                <class>primary</class>
+                <label translate="true">New Actor</label>
+            </button>
+        </buttons>
+        <spinner>magenest_actor</spinner>
+        <deps>
+            <dep>magenestadmin_actor_listing.magenestadmin_actor_listing_data_source</dep>
+        </deps>
+    </settings>
+    <dataSource name="magenestadmin_actor_listing_data_source" component="Magento_Ui/js/grid/provider">
+        <settings>
+            <updateUrl path="mui/index/render"/>
+            <storageConfig>
+                <param name="indexField" xsi:type="string">actor_id</param>
+            </storageConfig>
+        </settings>
+        <aclResource>Magenest_Movie::config_movie</aclResource>
+        <dataProvider class="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider"
+                      name="magenestadmin_actor_listing_data_source">
+            <settings>
+                <requestFieldName>actor_id</requestFieldName>
+                <primaryFieldName>actor_id</primaryFieldName>
+            </settings>
+        </dataProvider>
+    </dataSource>
+    <listingToolbar name="listing_top">
+        <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+                <item name="sticky" xsi:type="boolean">true</item>
+            </item>
+        </argument>
+        <bookmark name="bookmarks"/>
+        <filters name="listing_filters"/>
+        <columnsControls name="columns_controls"/>
+        <filterSearch name="fulltext">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="provider" xsi:type="string">
+                        magenestadmin_actor_listing.magenestadmin_actor_listing_data_source
+                    </item>
+                    <item name="chipsProvider" xsi:type="string">
+                        magenestadmin_actor_listing.magenestadmin_actor_listing.listing_top.listing_filters_chips
+                    </item>
+                    <item name="storageConfig" xsi:type="array">
+                        <item name="provider" xsi:type="string">
+                            magenestadmin_actor_listing.magenestadmin_actor_listing.listing_top.bookmarks
+                        </item>
+                        <item name="namespace" xsi:type="string">current.search</item>
+                    </item>
+                </item>
+            </argument>
+        </filterSearch>
+
+        <paging name="listing_paging"/>
+        <exportButton name="export_button"/>
+        <massaction name="listing_massaction">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="component" xsi:type="string">Magento_Ui/js/grid/tree-massactions</item>
+                </item>
+            </argument>
+            <action name="delete">
+                <argument name="data" xsi:type="array">
+                    <item name="config" xsi:type="array">
+                        <item name="type" xsi:type="string">delete</item>
+                        <item name="label" xsi:type="string" translate="true">Delete</item>
+                        <item name="url" xsi:type="url" path="*/*/delete"/>
+                        <item name="confirm" xsi:type="array">
+                            <item name="title" xsi:type="string" translate="true">Delete Row</item>
+                            <item name="message" xsi:type="string" translate="true">Are you sure you wan't to delete
+                                selected items?
+                            </item>
+                        </item>
+                    </item>
+                </argument>
+            </action>
+        </massaction>
+    </listingToolbar>
+    <columns name="magenest_actor">
+        <selectionsColumn name="ids">
+            <settings>
+                <indexField>actor_id</indexField>
+            </settings>
+        </selectionsColumn>
+        <column name="actor_id" sortOrder="20">
+            <settings>
+                <filter>text</filter>
+                <label translate="true">#</label>
+            </settings>
+        </column>
+        <column name="name" sortOrder="30">
+            <settings>
+                <label translate="true">Name</label>
+                <filter>text</filter>
+            </settings>
+        </column>
+
+        <column name="action" sortOrder="65">
+            <settings>
+                <filter>text</filter>
+                <label translate="true">Action</label>
+            </settings>
+        </column>
+    </columns>
+</listing>

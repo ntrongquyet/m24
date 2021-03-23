@@ -29,6 +29,7 @@ class Movie extends Template
 
     public function getMovieItem()
     {
+
         $items = $this->movieCollectionFactory->create();
         $test = $items->getSelect()->joinLeft(
             ['md' => $items->getTable("magenest_director")],

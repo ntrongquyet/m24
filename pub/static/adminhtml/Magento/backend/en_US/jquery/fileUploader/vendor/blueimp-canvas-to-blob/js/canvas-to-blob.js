@@ -1,1 +1,0 @@
-/var/www/html/exam.local.com/lib/web/jquery/fileUploader/vendor/blueimp-canvas-to-blob/js/canvas-to-blob.js

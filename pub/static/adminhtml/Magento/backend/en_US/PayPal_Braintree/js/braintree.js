@@ -1,0 +1,1 @@
+/var/www/html/exam.local.com/vendor/paypal/module-braintree-core/view/adminhtml/web/js/braintree.js

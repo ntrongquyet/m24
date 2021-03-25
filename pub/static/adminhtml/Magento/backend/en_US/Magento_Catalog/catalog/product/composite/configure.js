@@ -1,0 +1,1 @@
+/var/www/html/exam.local.com/vendor/magento/module-catalog/view/adminhtml/web/catalog/product/composite/configure.js

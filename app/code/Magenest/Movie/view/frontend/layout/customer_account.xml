@@ -1,0 +1,10 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <referenceBlock name="sidebar.main.account_nav"/>
+            <block class="Magenest\Movie\Block\CustomerAccount" name="account_information"
+                   template="Magenest_Movie::customer_account_information.phtml"/>
+        </referenceContainer>
+    </body>
+</page>

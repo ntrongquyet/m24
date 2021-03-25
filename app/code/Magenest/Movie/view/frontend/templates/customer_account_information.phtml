@@ -1,0 +1,29 @@
+<?php
+/** @var Magenest\Movie\Block\CustomerAccount $block
+ */
+?>
+<div style="display: flex; justify-content: space-around;">
+    <div>
+        <img src="<?php echo $block->getAvatar(); ?>" width="200px" height="200px">
+    </div>
+    <div>
+        <div>
+            <span>Tên: </span>
+            <span>
+                <b><?php echo $block->getCustomer()->getFirstname(); ?></b>
+            </span>
+        </div>
+        <div>
+            <span>Địa chỉ: </span>
+            <span>
+                <b><?php echo $block->getCustomer()->getCreatedAt(); ?></b>
+            </span>
+        </div>
+    </div>
+</div>
+
+<?php
+//    $ob = \Magento\Framework\App\ObjectManager::getInstance();
+//    $urlBuilder = $ob->get(\Magento\Catalog\Model\Product\Image\UrlBuilder::class);
+
+?>

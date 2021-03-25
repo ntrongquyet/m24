@@ -1,1 +1,0 @@
-/var/www/html/exam.local.com/vendor/amzn/login-with-amazon-module/view/frontend/web/js/amazon-logout.js

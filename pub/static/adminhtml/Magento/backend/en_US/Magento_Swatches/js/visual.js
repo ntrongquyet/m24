@@ -1,1 +1,0 @@
-/var/www/html/exam.local.com/vendor/magento/module-swatches/view/adminhtml/web/js/visual.js

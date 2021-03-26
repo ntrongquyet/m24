@@ -19,20 +19,22 @@ class ChangeData
 
     public function afterGetItemData($subject, $result)
     {
-
         $product = $this->product->create()->load($result['product_id']);
-        $children = $product->getTypeInstance()->getUsedProducts($product);
-        $option_value = $result['options'][0]['option_value'];
-        $simple_product = null;
-        foreach ($children as $item) {
-            if ($option_value == $item->getData("color")) {
-                $simple_product = $item;
-                break;
+        if ($result['product_type'] == "configurable") {
+            $children = $product->getTypeInstance()->getUsedProducts($product);
+            $option_value = $result['options'][0]['option_value'];
+            $simple_product = null;
+            foreach ($children as $item) {
+                if ($option_value == $item->getData("color")) {
+                    $simple_product = $item;
+                    break;
+                };
             };
-        };
-        $result['product_image']['src'] = $this->urlBuilder->getUrl($simple_product->getData('small_image'), "product_base_image");
-        $result['product_name'] = $simple_product->getData('name');
-        return $result;
+            $result['product_image']['src'] = $this->urlBuilder->getUrl($simple_product->getData('small_image'), "product_base_image");
+            $result['product_name'] = $simple_product->getData('name');
+            return $result;
+        }
 
+        return $result;
     }
 }

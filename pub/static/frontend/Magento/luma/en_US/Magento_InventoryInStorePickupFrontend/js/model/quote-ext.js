@@ -1,0 +1,1 @@
+/var/www/html/exam.local.com/vendor/magento/module-inventory-in-store-pickup-frontend/view/frontend/web/js/model/quote-ext.js

@@ -1,0 +1,1 @@
+/var/www/html/exam.local.com/vendor/magento/module-inventory-configurable-product-frontend-ui/view/frontend/web/js/configurable.js

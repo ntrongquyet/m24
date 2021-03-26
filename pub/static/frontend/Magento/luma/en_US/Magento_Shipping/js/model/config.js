@@ -1,0 +1,1 @@
+/var/www/html/exam.local.com/vendor/magento/module-shipping/view/frontend/web/js/model/config.js

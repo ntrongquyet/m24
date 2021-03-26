@@ -1,0 +1,53 @@
+<?php
+/** @var Magenest\Movie\Block\Adminhtml\DataPageReport $block
+ */
+?>
+<div style="display: flex; justify-content: space-between;">
+    <div style="margin: auto 0;">
+        <div>
+            <span>Number of module installed in Magento: </span>
+            <span>
+                <b><?php echo $block->getAmountRecordTable('setup_module'); ?></b>
+            </span>
+        </div>
+        <div>
+            <span>Number of module installed in Magento: </span>
+            <span>
+                <b><?php echo $block->getModule(); ?></b>
+            </span>
+        </div>
+
+    </div>
+    <div style="margin: auto;">
+        <div>
+            <span>Number of Customer Table: </span>
+            <span>
+                <b><?php echo $block->getAmountRecordTable('customer_entity'); ?></b>
+            </span>
+        </div>
+        <div>
+            <span>Number of Product Table: </span>
+            <span>
+                <b><?php echo $block->getAmountRecordTable('catalog_product_entity'); ?></b>
+            </span>
+        </div>
+        <div>
+            <span>Number of Order Table: </span>
+            <span>
+                <b><?php echo $block->getAmountRecordTable('sales_order'); ?></b>
+            </span>
+        </div>
+        <div>
+            <span>Number of Invoice Table: </span>
+            <span>
+                <b><?php echo $block->getAmountRecordTable('sales_invoice'); ?></b>
+            </span>
+        </div>
+        <div>
+            <span>Number of CreditMemo Table: </span>
+            <span>
+                <b><?php echo $block->getAmountRecordTable('sales_creditmemo'); ?></b>
+            </span>
+        </div>
+    </div>
+</div>

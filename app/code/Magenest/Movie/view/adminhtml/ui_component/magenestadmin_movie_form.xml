@@ -68,8 +68,6 @@
                 </item>
             </argument>
         </field>
-
-
         <field name="description">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
@@ -93,6 +91,8 @@
                     <item name="validation" xsi:type="array">
                         <item name="required-entry" xsi:type="boolean">true</item>
                         <item name="validate-number" xsi:type="boolean">true</item>
+                        <item name="validate-number-range" xsi:type="string">0-5</item>
+
                     </item>
                 </item>
             </argument>

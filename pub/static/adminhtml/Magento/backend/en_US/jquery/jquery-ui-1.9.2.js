@@ -1,1 +1,0 @@
-/var/www/html/exam.local.com/lib/web/jquery/jquery-ui-1.9.2.js

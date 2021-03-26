@@ -1,1 +1,0 @@
-/var/www/html/exam.local.com/vendor/magento/module-instant-purchase/view/frontend/web/js/view/instant-purchase.js

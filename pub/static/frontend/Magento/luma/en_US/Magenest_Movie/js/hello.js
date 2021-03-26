@@ -1,1 +1,0 @@
-/var/www/html/exam.local.com/app/code/Magenest/Movie/view/frontend/web/js/hello.js

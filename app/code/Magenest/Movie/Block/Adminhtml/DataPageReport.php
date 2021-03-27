@@ -6,10 +6,23 @@ namespace Magenest\Movie\Block\Adminhtml;
 use Magento\Backend\Block\Template;
 use Magento\Framework\App\ResourceConnection;
 
+/**
+ * Class DataPageReport
+ * @package Magenest\Movie\Block\Adminhtml
+ */
 class DataPageReport extends Template
 {
+    /**
+     * @var ResourceConnection
+     */
     protected $resourceConnection;
 
+    /**
+     * DataPageReport constructor.
+     * @param Template\Context $context
+     * @param array $data
+     * @param ResourceConnection $resourceConnection
+     */
     public function __construct(Template\Context $context,
                                 array $data = [],
                                 ResourceConnection $resourceConnection)
@@ -20,7 +33,10 @@ class DataPageReport extends Template
     }
 
 
-
+    /**
+     * @param $tablename
+     * @return int|void
+     */
     public function getAmountRecordTable($tablename)
     {
         $connection = $this->resourceConnection->getConnection();

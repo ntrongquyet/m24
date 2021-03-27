@@ -9,13 +9,32 @@ use Magento\Eav\Model\Entity\Attribute\SetFactory as AttributeSetFactory;
 use Magento\Framework\Setup\ModuleDataSetupInterface;
 use Magento\Framework\Setup\Patch\DataPatchInterface;
 
+/**
+ * Class AddCustomerAttribute
+ * @package Magenest\Movie\Setup\Patch\Data
+ */
 class AddCustomerAttribute implements DataPatchInterface
 {
 
+    /**
+     * @var ModuleDataSetupInterface
+     */
     private $moduleDataSetup;
+    /**
+     * @var CustomerSetupFactory
+     */
     private $customerSetupFactory;
+    /**
+     * @var AttributeSetFactory
+     */
     private $attributeSetFactory;
 
+    /**
+     * AddCustomerAttribute constructor.
+     * @param ModuleDataSetupInterface $moduleDataSetup
+     * @param CustomerSetupFactory $customerSetupFactory
+     * @param AttributeSetFactory $attributeSetFactory
+     */
     public function __construct(ModuleDataSetupInterface $moduleDataSetup,
                                 CustomerSetupFactory $customerSetupFactory,
                                 AttributeSetFactory $attributeSetFactory)
@@ -26,16 +45,25 @@ class AddCustomerAttribute implements DataPatchInterface
     }
 
 
+    /**
+     * @return array
+     */
     public static function getDependencies()
     {
         return [];
     }
 
+    /**
+     * @return array
+     */
     public function getAliases()
     {
         return [];
     }
 
+    /**
+     * @return AddCustomerAttribute|void
+     */
     public function apply()
     {
         $this->moduleDataSetup->getConnection()->startSetup();

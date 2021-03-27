@@ -7,11 +7,27 @@ use Magenest\Movie\Model\ActorFactory;
 use Magenest\Movie\Model\ResourceModel\Actor as ActorResoureModel;
 use Magento\Backend\App\Action\Context;
 
+/**
+ * Class Save
+ * @package Magenest\Movie\Controller\Adminhtml\Actor
+ */
 class Save extends \Magento\Backend\App\Action
 {
+    /**
+     * @var ActorFactory
+     */
     protected $actorFactory;
+    /**
+     * @var ActorResoureModel
+     */
     protected $actorResoureModel;
 
+    /**
+     * Save constructor.
+     * @param Context $context
+     * @param ActorFactory $actorFactory
+     * @param ActorResoureModel $actorResoureModel
+     */
     public function __construct(Context $context,
                                 ActorFactory $actorFactory,
                                 ActorResoureModel $actorResoureModel)
@@ -21,6 +37,9 @@ class Save extends \Magento\Backend\App\Action
         parent::__construct($context);
     }
 
+    /**
+     * @return \Magento\Framework\App\ResponseInterface|\Magento\Framework\Controller\ResultInterface
+     */
     public function execute()
     {
         $data = $this->getRequest()->getPostValue();

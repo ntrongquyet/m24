@@ -6,12 +6,33 @@ use Magenest\Movie\Model;
 use Magenest\Movie\Model\ResourceModel;
 use Magento\Framework\View\Element\Template;
 
+/**
+ * Class Movie
+ * @package Magenest\Movie\Block
+ */
 class Movie extends Template
 {
+    /**
+     * @var
+     */
     protected $movieFactory;
+    /**
+     * @var ResourceModel\Movie
+     */
     protected $movieResourceModel;
+    /**
+     * @var ResourceModel\Movie\MovieCollectionFactory
+     */
     protected $movieCollectionFactory;
 
+    /**
+     * Movie constructor.
+     * @param Template\Context $context
+     * @param Model\MovieFactory $movieFactory
+     * @param ResourceModel\Movie $movieResourceModel
+     * @param ResourceModel\Movie\MovieCollectionFactory $movieCollectionFactory
+     * @param array $data
+     */
     public function __construct(
         Template\Context $context,
         Model\MovieFactory $movieFactory,
@@ -27,6 +48,9 @@ class Movie extends Template
         parent::__construct($context, $data);
     }
 
+    /**
+     * @return mixed
+     */
     public function getMovieItem()
     {
 
@@ -47,6 +71,9 @@ class Movie extends Template
         return $items;
     }
 
+    /**
+     * @return string
+     */
     public function getTitle()
     {
         return ('HelloWorld!');

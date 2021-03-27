@@ -8,16 +8,33 @@ use Magento\Backend\Block\Template\Context;
 use Magento\Config\Block\System\Config\Form\Field;
 use Magento\Framework\Data\Form\Element\AbstractElement;
 
+/**
+ * Class rowsOfTableMagenestActor
+ * @package Magenest\Movie\Block
+ */
 class rowsOfTableMagenestActor extends Field
 {
+    /**
+     * @var ActorCollectionFactory
+     */
     protected $_actorCollectionFactory;
 
+    /**
+     * rowsOfTableMagenestActor constructor.
+     * @param Context $context
+     * @param array $data
+     * @param ActorCollectionFactory $actorCollectionFactory
+     */
     public function __construct(Context $context, array $data = [], ActorCollectionFactory $actorCollectionFactory)
     {
         $this->_actorCollectionFactory = $actorCollectionFactory;
         parent::__construct($context, $data);
     }
 
+    /**
+     * @param AbstractElement $element
+     * @return string
+     */
     protected function _getElementHtml(AbstractElement $element)
     {
         $count = $this->_actorCollectionFactory->create()->count();

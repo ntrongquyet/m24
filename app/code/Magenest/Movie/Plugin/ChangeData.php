@@ -5,18 +5,38 @@ namespace Magenest\Movie\Plugin;
 
 use Magento\Catalog\Model\ProductFactory;
 
+/**
+ * Class ChangeData
+ * @package Magenest\Movie\Plugin
+ */
 class ChangeData
 {
+    /**
+     * @var ProductFactory
+     */
     protected $product;
 
+    /**
+     * @var \Magento\Catalog\Model\Product\Image\UrlBuilder
+     */
     protected $urlBuilder;
 
+    /**
+     * ChangeData constructor.
+     * @param ProductFactory $product
+     * @param \Magento\Catalog\Model\Product\Image\UrlBuilder $urlBuilder
+     */
     public function __construct(ProductFactory $product, \Magento\Catalog\Model\Product\Image\UrlBuilder $urlBuilder)
     {
         $this->product = $product;
         $this->urlBuilder = $urlBuilder;
     }
 
+    /**
+     * @param $subject
+     * @param $result
+     * @return mixed
+     */
     public function afterGetItemData($subject, $result)
     {
         $product = $this->product->create()->load($result['product_id']);

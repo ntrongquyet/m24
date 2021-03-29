@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="magenest_rules" resource="default" engine="innodb" comment="Table Magenest Rules">
+        <column xsi:type="int" name="id" padding="6" unsigned="true" nullable="false" identity="true"
+                comment="ID"/>
+        <column xsi:type="varchar" name="title" length="50" nullable="true" comment="Rule Title"/>
+        <column xsi:type="varchar" name="status" length="10" nullable="true" comment="Rule Status"/>
+        <column xsi:type="int" name="rule_type" padding="11" nullable="true" comment="Rule Type"/>
+        <column xsi:type="text" name="conditions_serialized" nullable="true" comment="Rule Condition"/>
+        <column xsi:type="timestamp" name="afterLoad" nullable="true" comment="Rule afterLoad"/>
+        <column xsi:type="timestamp" name="afterSave" nullable="true" comment="Rule afterSave"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id"/>
+        </constraint>
+    </table>
+
+</schema>

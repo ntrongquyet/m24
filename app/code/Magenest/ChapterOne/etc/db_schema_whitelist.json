@@ -1,0 +1,16 @@
+{
+    "magenest_rules": {
+        "column": {
+            "id": true,
+            "title": true,
+            "status": true,
+            "rule_type": true,
+            "conditions_serialized": true,
+            "afterLoad": true,
+            "afterSave": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

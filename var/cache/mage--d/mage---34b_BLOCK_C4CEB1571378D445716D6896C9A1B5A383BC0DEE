@@ -1,0 +1,7 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1616979998;s:6:"expire";i:1616983598;s:4:"tags";s:57:"34b_BLOCK_HTML,34b_CAT_C,34b_CAT_C_3,34b_CAT_C_4,34b_MAGE";}
+a:2:{s:8:"policies";a:1:{i:0;a:3:{s:2:"id";s:10:"script-src";s:5:"hosts";a:0:{}s:6:"hashes";a:5:{s:44:"LjXSxB4W8Uk/mTlylOKQz/LC2Adv8LHVB5lmNqI4TEo=";s:6:"sha256";s:44:"48sb4Je7XoTlJimO7pm/+fwXo5BBI6oU4Vci+QqK2/I=";s:6:"sha256";s:44:"HUjaEs6gPI/8f06cL8Wy1zR3vaPjSDAYb+YL5IRBsf4=";s:6:"sha256";s:44:"9N89WMndeXJQQmez3zcXupuWhb0jRtPuHYgRtBa1Cjo=";s:6:"sha256";s:44:"GrSjSH0X5xTc+XigCxGXUJR1jsb5166ceeny0T0z/pE=";s:6:"sha256";}}}s:4:"html";s:503:"
+<nav class="navigation" data-action="navigation">
+    <ul data-mage-init='{"menu":{"responsive":true, "expanded":true, "position":{"my":"left top","at":"left bottom"}}}'>
+        <li  class="level0 nav-1 category-item first level-top"><a href="http://exam.local.com/simple.html"  class="level-top" ><span>Simple</span></a></li><li  class="level0 nav-2 category-item last level-top"><a href="http://exam.local.com/ao-polo.html"  class="level-top" ><span>Áo Polo</span></a></li>            </ul>
+</nav>
+";}

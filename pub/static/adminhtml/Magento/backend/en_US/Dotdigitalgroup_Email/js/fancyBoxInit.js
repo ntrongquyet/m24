@@ -1,1 +1,0 @@
-/var/www/html/exam.local.com/vendor/dotmailer/dotmailer-magento2-extension/view/adminhtml/web/js/fancyBoxInit.js

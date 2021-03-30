@@ -1,0 +1,13 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Magenest_ChapterTwo::clock_parent" title="Clock" module="Magenest_ChapterTwo" sortOrder="35"
+             resource="Magenest_Movie::ctw"/>
+        <!-- **************************************** -->
+        <add id="Magenest_ChapterTwo::clock" title="Countdown Management" module="Magenest_ChapterTwo" sortOrder="1"
+             resource="Magenest_Movie::ctw" parent="Magenest_ChapterTwo::clock_parent"/>
+        <add id="Magenest_ChapterTwo::clock_config" title="Clock Configuration" module="Magenest_ChapterTwo" sortOrder="2"
+             resource="Magenest_Movie::ctw" parent="Magenest_ChapterTwo::clock_parent"  action="admin/system_config/edit/section/mgn_ctw_section"/>
+        <!-- **************************************** -->
+    </menu>
+</config>

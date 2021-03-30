@@ -1,0 +1,1 @@
+/var/www/html/exam.local.com/lib/web/mage/ie-class-fixer.js

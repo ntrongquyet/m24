@@ -1,0 +1,11 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <referenceContainer name="header-wrapper">
+                <block class="Magenest\ChapterTwo\Block\Clock" name="mgn_clock"
+                       template="Magenest_ChapterTwo::clock.phtml"/>
+            </referenceContainer>
+        </referenceContainer>
+    </body>
+</page>

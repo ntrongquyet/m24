@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+
+        <tab id="mgn_clock" translate="label" sortOrder="155">
+            <label>Default Clock</label>
+        </tab>
+        <section id="mgn_ctw_section" translate="label" type="text" sortOrder="140" showInDefault="1"
+                 showInWebsite="1" showInStore="1">
+            <label>Clock</label>
+            <tab>mgn_clock</tab>
+            <resource>Magenest_ChapterTwo::ctw</resource>
+            <group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInStore="1">
+                <label>Default Clock</label>
+                <field id="title_clock" translate="label" canRestore="1" type="text" sortOrder="1" showInDefault="1"
+                       showInWebsite="1"
+                       showInStore="1">
+                    <label>Title Clock</label>
+                </field>
+                <field id="size_clock" canRestore="1" translate="label" type="select" sortOrder="2"
+                       showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Size Clock</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+
+
+                <field id="color_clock" translate="label" type="text" sortOrder="3" showInDefault="1"
+                       showInWebsite="1"
+                       showInStore="1">
+                    <label>Color Clock</label>
+                    <comment><![CDATA[Background color]]></comment>
+                    <frontend_model>Magenest\ChapterTwo\Block\Adminhtml\Color</frontend_model>
+
+                </field>
+                <field id="color_text" translate="label" type="text" sortOrder="4" showInDefault="1"
+                       showInWebsite="1"
+                       showInStore="1">
+                    <label>Color Text</label>
+                    <comment><![CDATA[Background color]]></comment>
+                    <frontend_model>Magenest\ChapterTwo\Block\Adminhtml\Color</frontend_model>
+                </field>
+                <field id="clock_type" translate="label" sortOrder="5" type="select" showInDefault="1"
+                       showInWebsite="1"
+                       showInStore="1">
+                    <label>Clock Type</label>
+                    <frontend_model>Magenest\ChapterTwo\Block\Adminhtml\ClockType</frontend_model>
+                    <backend_model>Magenest\ChapterTwo\Model\System\Config\ClockType</backend_model>
+
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
+

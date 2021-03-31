@@ -1,0 +1,28 @@
+<?php /** @var Magenest\ChapterTwo\Block\Clock $block */ ?> <style> .main-clock { width: 200px; height: 80px; margin: 5px auto; border: solid 2px #0a6c9f; position: absolute; display: flex; top: 0; left: 35%; flex-direction: column-reverse; justify-content: center; } .clock-title { text-align: center; color: <?php echo $block->getColorText(); ?>; } .clock-time { padding-top: 20px; text-align: center; font-size: 20px; color: <?php echo $block->getColorClock(); ?>; }</style><div class="main-clock"><div class="clock-time" id="time"></div><div class="clock-title"><?php echo $block->getTitle() ?></div></div><script>
+    function clock() {
+        
+        var timer = new Date();
+        
+        var hour = timer.getHours();  
+        var minute = timer.getMinutes();  
+        var second = timer.getSeconds();  
+        var session = "AM";
+        
+        if (hour < 10) {
+            hour = "0" + hour;
+        }
+        if (minute < 10) {
+            minute = "0" + minute;
+        }
+        if (second < 10) {
+            second = "0" + second;
+        }
+        if (hour > 12) {
+            session = "PM";
+        }
+        
+        document.getElementById("time").innerHTML = hour + ":" + minute + ":" + second + " " + session;
+    }
+
+    
+    setInterval("clock()", 1000);</script>

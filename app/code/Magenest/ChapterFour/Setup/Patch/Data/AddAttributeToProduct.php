@@ -10,11 +10,26 @@ use Magento\Eav\Setup\EavSetupFactory;
 use Magento\Framework\Setup\ModuleDataSetupInterface;
 use Magento\Framework\Setup\Patch\DataPatchInterface;
 
+/**
+ * Class AddAttributeToProduct
+ * @package Magenest\ChapterFour\Setup\Patch\Data
+ */
 class AddAttributeToProduct implements DataPatchInterface
 {
+    /**
+     * @var ModuleDataSetupInterface
+     */
     private $moduleDataSetup;
+    /**
+     * @var EavSetupFactory
+     */
     private $eavSetupFactory;
 
+    /**
+     * AddAttributeToProduct constructor.
+     * @param ModuleDataSetupInterface $moduleDataSetup
+     * @param EavSetupFactory $eavSetupFactory
+     */
     public function __construct(ModuleDataSetupInterface $moduleDataSetup,
                                 EavSetupFactory $eavSetupFactory)
     {
@@ -23,16 +38,25 @@ class AddAttributeToProduct implements DataPatchInterface
     }
 
 
+    /**
+     * @return array
+     */
     public static function getDependencies()
     {
         return [];
     }
 
+    /**
+     * @return array
+     */
     public function getAliases()
     {
         return [];
     }
 
+    /**
+     * @return AddAttributeToProduct|void
+     */
     public function apply()
     {
         $eavSetup = $this->eavSetupFactory->create(['setup' => $this->moduleDataSetup]);

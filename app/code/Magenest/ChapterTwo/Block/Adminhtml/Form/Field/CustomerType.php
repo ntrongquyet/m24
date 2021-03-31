@@ -8,10 +8,23 @@ use Magento\Framework\App\ResourceConnection;
 use Magento\Framework\View\Element\Html\Select;
 use Magento\Framework\View\Element\Template\Context;
 
+/**
+ * Class CustomerType
+ * @package Magenest\ChapterTwo\Block\Adminhtml\Form\Field
+ */
 class CustomerType extends Select
 {
+    /**
+     * @var ResourceConnection
+     */
     protected $resouceConnection;
 
+    /**
+     * CustomerType constructor.
+     * @param Context $context
+     * @param array $data
+     * @param ResourceConnection $resourceConnection
+     */
     public function __construct(Context $context, array $data = [],
                                 ResourceConnection $resourceConnection)
     {
@@ -54,6 +67,9 @@ class CustomerType extends Select
         return parent::_toHtml();
     }
 
+    /**
+     * @return array|array[]
+     */
     private function getSourceOptions()
     {
         $connection = $this->resouceConnection->getConnection();

@@ -11,20 +11,39 @@ use Magento\Ui\Component\Form\Element\Select;
 use Magento\Ui\Component\Form\Field;
 use Magento\Ui\Component\Form\Fieldset;
 
+/**
+ * Class Fields
+ * @package Magenest\ChapterFour\Ui\DataProvider\Product\Form\Modifier
+ */
 class Fields extends AbstractModifier
 {
+    /**
+     * @var LocatorInterface
+     */
     private $locator;
 
+    /**
+     * Fields constructor.
+     * @param LocatorInterface $locator
+     */
     public function __construct(LocatorInterface $locator)
     {
         $this->locator = $locator;
     }
 
+    /**
+     * @param array $data
+     * @return array
+     */
     public function modifyData(array $data)
     {
         return $data;
     }
 
+    /**
+     * @param array $meta
+     * @return array|null
+     */
     public function modifyMeta(array $meta)
     {
 

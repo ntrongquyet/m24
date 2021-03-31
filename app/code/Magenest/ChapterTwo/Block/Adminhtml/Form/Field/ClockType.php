@@ -7,9 +7,18 @@ namespace Magenest\ChapterTwo\Block\Adminhtml\Form\Field;
 use Magento\Framework\View\Element\Html\Select;
 use Magento\Framework\View\Element\Template\Context;
 
+/**
+ * Class ClockType
+ * @package Magenest\ChapterTwo\Block\Adminhtml\Form\Field
+ */
 class ClockType extends Select
 {
 
+    /**
+     * ClockType constructor.
+     * @param Context $context
+     * @param array $data
+     */
     public function __construct(Context $context, array $data = [])
     {
         parent::__construct($context, $data);
@@ -50,6 +59,9 @@ class ClockType extends Select
         return parent::_toHtml();
     }
 
+    /**
+     * @return \string[][]
+     */
     private function getSourceOptions()
     {
 

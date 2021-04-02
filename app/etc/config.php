@@ -319,6 +319,7 @@ return [
         'Klarna_Kp' => 1,
         'Klarna_Onsitemessaging' => 1,
         'Klarna_KpGraphQl' => 1,
+        'Magenest_ChapterFive' => 1,
         'Magenest_ChapterFour' => 1,
         'Magenest_ChapterOne' => 1,
         'Magenest_ChapterTwo' => 1,

@@ -113,7 +113,7 @@ class Column extends AbstractComponent implements ColumnInterface
      *
      * @return void
      */
-    protected function addFieldToSelect()
+    protected function  addFieldToSelect()
     {
         if ($this->getData('config/add_field')) {
             $this->getContext()->getDataProvider()->addField($this->getName());

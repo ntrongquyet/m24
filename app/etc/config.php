@@ -322,6 +322,8 @@ return [
         'Magenest_ChapterFive' => 1,
         'Magenest_ChapterFour' => 1,
         'Magenest_ChapterOne' => 1,
+        'Magenest_ChapterSeven' => 1,
+        'Magenest_ChapterSix' => 1,
         'Magenest_ChapterTwo' => 1,
         'Magenest_Movie' => 1,
         'PayPal_Braintree' => 1,

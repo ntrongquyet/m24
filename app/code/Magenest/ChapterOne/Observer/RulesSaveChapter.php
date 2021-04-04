@@ -5,6 +5,7 @@ namespace Magenest\ChapterOne\Observer;
 
 
 use Magenest\ChapterOne\Model\ResoucreModel\Rules as RulesResouceModel;
+use Magenest\ChapterOne\Model\RuleRepository;
 use Magenest\ChapterOne\Model\RulesFactory;
 use Magento\Framework\App\ResourceConnection;
 use Magento\Framework\Event\Observer;
@@ -15,6 +16,11 @@ use Magento\Framework\Event\Observer;
  */
 class RulesSaveChapter implements \Magento\Framework\Event\ObserverInterface
 {
+
+    /**
+     * @var RuleRepository
+     */
+    protected $rulesRepository;
     /**
      * @var \Magenest\ChapterOne\Model\Rules
      */
@@ -23,10 +29,6 @@ class RulesSaveChapter implements \Magento\Framework\Event\ObserverInterface
      * @var RulesResouceModel
      */
     protected $rulesResourceModel;
-    /**
-     * @var int
-     */
-    protected $flag;
     /**
      * @var ResourceConnection
      */
@@ -40,9 +42,10 @@ class RulesSaveChapter implements \Magento\Framework\Event\ObserverInterface
      */
     public function __construct(RulesFactory $rulesFactory,
                                 RulesResouceModel $rulesResourceModel,
-                                ResourceConnection $resourceConection)
+                                ResourceConnection $resourceConection,
+                                RuleRepository $ruleRepository)
     {
-        $this->flag = 1;
+        $this->rulesRepository = $ruleRepository;
         $this->rulesFactory = $rulesFactory->create();
         $this->rulesResourceModel = $rulesResourceModel;
         $this->resourceConection = $resourceConection;
@@ -56,12 +59,10 @@ class RulesSaveChapter implements \Magento\Framework\Event\ObserverInterface
         $created_date = date("Y-m-d H:i:s");
         $data = $observer->getData('data_object');
         $id = $data->getData('id');
-
-        $connection = $this->resourceConnection->getConnection();
-        $select = $connection->select();
-        $tableName = $this->resourceConnection->getTableName('magenest_rules');
-        $sql = "UPDATE " . $tableName . "SET afterSave = '" . $created_date . "' WHERE id = " . $id;
-        $result = $connection->query($sql);
+        $connection = $this->resourceConection->getConnection();
+        $tableName = $this->resourceConection->getTableName('magenest_rules');
+        $sql = "UPDATE " . $tableName . " SET afterSave = '" . $created_date . "' WHERE id = " . $id;
+        $connection->query($sql);
 
     }
 }
